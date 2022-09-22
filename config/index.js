@@ -30,18 +30,18 @@ export const USER_CONFIG = {
     // 金山每日一句
     CIBA: true,
     // 每日一言
-    oneTalk: false,
+    oneTalk: true,
     // 土味情话(彩虹屁)
-    earthyLoveWords: false,
+    earthyLoveWords: true,
     // 朋友圈文案
-    momentCopyrighting: false,
+    momentCopyrighting: true,
     // 毒鸡汤
     poisonChickenSoup: false,
     // 古诗古文
-    poetry: false,
+    poetry: true,
     
     /** 星座运势 */
-    horoscope: false,
+    horoscope: true,
     
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -66,9 +66,40 @@ export const USER_CONFIG = {
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "U_8n8UrZAQ9gUAfSvO1R6MnKsjMSRv0cphqiHY2pJSA",
       // 所在省份
-      province: "河南",
+      province: "河南省",
       // 所在城市
-      city: "平顶山市",
+      city: "平顶山市叶县",
+      // 新历生日, 仅用作获取星座运势, 格式必须
+      horoscopeDate: '9-5',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
+      openUrl: "https://wangxinleo.cn",
+      // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {"type": "*生日", "name": "宝宝", "year": "2001", "date": "09-05"},
+        {"type": "节日", "name": "纪念日", "year": "2022", "date": "03-09"}
+      ],
+      // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
+      customizedDateList: [
+        // 在一起的日子
+        {"keyword": "love_day", date: "2022-03-09"},
+        // 纪念日
+        {"keyword": "marry_day", date: "2022-03-09"}
+      ]
+    },
+    {
+      // 想要发送的人的名字
+      name: "宝宝",
+      // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: "owbZI63Yjjw1Wzj0lCz4YHtZCf-A",
+      // 你想对他发送的模板消息的模板ID
+      useTemplateId: "U_8n8UrZAQ9gUAfSvO1R6MnKsjMSRv0cphqiHY2pJSA",
+      // 所在省份
+      province: "河南省",
+      // 所在城市
+      city: "平顶山市叶县",
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '9-5',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -117,7 +148,7 @@ export const USER_CONFIG = {
   /** 天气相关 */
   
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "河南",
+  PROVINCE: "河南省",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
   CITY: "平顶山市",
   
