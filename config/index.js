@@ -66,7 +66,7 @@ export const USER_CONFIG = {
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "U_8n8UrZAQ9gUAfSvO1R6MnKsjMSRv0cphqiHY2pJSA",
       // 所在省份
-      province: "河南省",
+      province: "河南",
       // 所在城市
       city: "平顶山",
       // 新历生日, 仅用作获取星座运势, 格式必须
@@ -97,7 +97,7 @@ export const USER_CONFIG = {
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "U_8n8UrZAQ9gUAfSvO1R6MnKsjMSRv0cphqiHY2pJSA",
       // 所在省份
-      province: "河南省",
+      province: "河南",
       // 所在城市
       city: "平顶山",
       // 新历生日, 仅用作获取星座运势, 格式必须
@@ -148,9 +148,9 @@ export const USER_CONFIG = {
   /** 天气相关 */
   
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "河南省",
+  PROVINCE: "河南",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "平顶山市",
+  CITY: "平顶山",
   
   /** 重要节日相关 */
   
