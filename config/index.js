@@ -64,7 +64,7 @@ export const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "owbZI63YJx9u3aGM4Mv-Et4uha9k",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "U_8n8UrZAQ9gUAfSvO1R6MnKsjMSRv0cphqiHY2pJSA",
+      useTemplateId: "QPuHg2HbEDYSm3IDvfn2jqVv0bACzNRGgd8in8g36qU",
       // 所在省份
       province: "河南",
       // 所在城市
@@ -95,7 +95,7 @@ export const USER_CONFIG = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "owbZI63Yjjw1Wzj0lCz4YHtZCf-A",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "U_8n8UrZAQ9gUAfSvO1R6MnKsjMSRv0cphqiHY2pJSA",
+      useTemplateId: "QPuHg2HbEDYSm3IDvfn2jqVv0bACzNRGgd8in8g36qU",
       // 所在省份
       province: "河南",
       // 所在城市
@@ -110,6 +110,7 @@ export const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "宝宝", "year": "2001", "date": "09-05"},
+        {"type": "*生日", "name": "宝子", "year": "1997", "date": "01-07"},
         {"type": "节日", "name": "纪念日", "year": "2022", "date": "03-09"}
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
